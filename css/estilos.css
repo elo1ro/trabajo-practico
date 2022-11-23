@@ -128,8 +128,9 @@ body{
     margin-bottom: 25px;
 }
 
-.about_paragraph{
+.about_parrafo{
     line-height: 1.7;
+    text-align: center;
 }
 
 .about_main{
@@ -154,4 +155,55 @@ body{
 .about_icon{
     width: 40px;
 
+}
+
+/* knowledge */
+
+.knowledge{
+    padding-top: 20%;
+}
+
+.knowledge_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center; 
+}
+
+.knowledge_text{
+    padding: 10%;
+}
+
+.knowledge_picture{
+    max-width: 500px;
+}
+
+.knowledge_paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.lista{
+    list-style: none;
+    list-style-image: url('../img/check.svg');
+}
+
+.knowledge_img{
+    width: 360px;
+    display: block;
+}
+
+/* precio */
+
+.price{
+    text-align: center;
+}
+
+.price_table{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
 }
