@@ -190,7 +190,7 @@ body{
 
 .knowledge_img{
     width: 360px;
-    display: block;
+    
 }
 
 /* precio */
@@ -207,3 +207,4 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
+
