@@ -310,9 +310,7 @@ body{
 /*contacto*/
 
 .contenedor{
-    background-color: rgba(0, 0, 0, .6);
     width: 100%;
-    padding-top: 7%;
     padding-left: 7%;
     padding-bottom: 7%;
 }
@@ -321,7 +319,7 @@ body{
     padding: 14px 0;
 }
 
-.form-title span{
+.form-title{
     color: #e5e5f7;
 }
 
@@ -335,7 +333,7 @@ body{
     border: none;
     outline: none;
     border-bottom: 2px solid #e5e5f7;
-    width: 37%;
+    width: 70%;
     padding: 12px;
     margin-bottom: 20px;
     border-radius: 2px;
@@ -344,7 +342,7 @@ body{
 }
 
 .contenedor .form .btn-submit{
-    width: 37%;
+    width:70%;
     display: block;
     outline: none;
     background: #e5e5f7;
@@ -353,4 +351,32 @@ body{
     color: #696871;
     padding: 15px 0;
     cursor: pointer;
+}
+
+/*mapa*/
+
+.contacto_dondeestamos{
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    padding-top: 7%;
+}
+
+.mapa{
+    width: 100%;
+    padding-top: 0;
+    padding-left: 10%;
+}
+
+.mapa_title{
+    color: #fff;
+    padding: 15px 0;
+}
+
+.mapa_img{
+
+    width: 400px;
+    height: 400px;
+    position: relative;
+    outline: 2px solid black;
+
 }
