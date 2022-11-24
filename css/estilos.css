@@ -18,7 +18,6 @@ body{
 } 
 
 .hero{
-    width: 100%;
     height: 100vh;
     min-height: 600px;
     max-height: 800px;
@@ -66,8 +65,6 @@ body{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
-    gap: 5em;
-
 }
 
 .nav_links{
@@ -89,7 +86,7 @@ body{
 /* hero container */
 
 .hero_container{
-    max-width: 800px;
+
     display: grid;
     --padding-container:0;
     grid-auto-rows: max-content;
@@ -121,6 +118,10 @@ body{
 .about{
     text-align: center;
 }
+.container_about{
+    padding: 5%;
+    padding-top: 15%;
+}
 
 .subtitle{
     color: var(--color-title);
@@ -134,7 +135,7 @@ body{
 }
 
 .about_main{
-    padding-top: 80px;
+    padding-top: 14%;
     display: grid;
     width: 90%;
     margin: 0 auto;
@@ -160,7 +161,8 @@ body{
 /* knowledge */
 
 .knowledge{
-    padding-top: 20%;
+    padding: 2%;
+    padding-top: 10%;
 }
 
 .knowledge_container{
@@ -171,7 +173,7 @@ body{
 }
 
 .knowledge_text{
-    padding: 10%;
+    padding: 5%;
 }
 
 .knowledge_picture{
@@ -195,12 +197,17 @@ body{
 
 /* precio */
 
-.price{
+
+.price_subtitulo{
+    padding-top: 10%;
     text-align: center;
 }
 
+
 .price_table{
-    padding-top: 60px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 15%;
     display: flex;
     flex-wrap: wrap;
     gap: 2.5em;
@@ -208,3 +215,142 @@ body{
     align-items: center;
 }
 
+.price_element{
+    background-color: #e5e5f7;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    padding-top: 5%;
+    --color-plan: #696871;
+    --color-precio: #1D293F;
+    --color-cta: #5454D4;
+    --bg-cta: #fff;
+    --color-items: #696871   
+}
+
+.plan_title{
+    color: var(--color-precio);
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.plan_items{
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+
+}
+
+.plan_cta{
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--bg-cta);
+    font-weight: 600;
+    color: var(--color-precio);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+
+}
+ /*testimonios*/ 
+
+.testimonios{
+    padding: 3% 6%;
+    background-color: #e5e5f7;
+
+}
+
+.testimonio_container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.testimony_body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.testimony_body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.testimony_img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimony_texts{
+    max-width: 700px;
+}
+
+.testimony_arrow{
+    width: 90%;
+    cursor: pointer;
+}
+
+/*contacto*/
+
+.contenedor{
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    padding-top: 7%;
+    padding-left: 7%;
+    padding-bottom: 7%;
+}
+
+.contenedor .form .form-header .form-title{
+    padding: 14px 0;
+}
+
+.form-title span{
+    color: #e5e5f7;
+}
+
+.contenedor .form .form-label{
+    display: block;
+    color: #e5e5f7;
+}
+
+.contenedor .form .form-input, .form-textarea{
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e5e5f7;
+    width: 37%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.contenedor .form .btn-submit{
+    width: 37%;
+    display: block;
+    outline: none;
+    background: #e5e5f7;
+    font-size: 16px;
+    border: none;
+    color: #696871;
+    padding: 15px 0;
+    cursor: pointer;
+}
