@@ -187,6 +187,7 @@ body{
 .lista{
     list-style: none;
     list-style-image: url('../img/check.svg');
+    padding-bottom: 20px;
 }
 
 .knowledge_img{
