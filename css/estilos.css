@@ -282,15 +282,15 @@ body{
     gap: 2em;
     grid-column: 2/3;
     grid-row: 1/2;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
 }
 
-.testimony_body--show{
+/*.testimony_body--show{
     pointer-events: unset;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-}
+}*/
 
 
 .testimony_img{
@@ -307,6 +307,7 @@ body{
 .testimony_arrow{
     width: 90%;
     cursor: pointer;
+    
 }
 
 /*contacto*/
@@ -408,3 +409,5 @@ footer{
     font-size: 12px;
     font-family:'Times New Roman', Times, serif;
 }
+
+@media (max-width:"700px") 
