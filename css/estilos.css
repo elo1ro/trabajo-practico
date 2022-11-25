@@ -62,7 +62,7 @@ body{
 .nav_link{
     margin-left: auto;
     padding: 0;
-    display: grid;
+    display: flex;
 }
 
 .nav_links{
@@ -148,13 +148,15 @@ body{
     gap: 1em;
     justify-items: center;
     width: 260px;
-    overflow: hidden
+    overflow: hidden;
+
 }
 
 .about_icon{
     width: 40px;
-
+    cursor: pointer;
 }
+
 
 /* knowledge */
 
@@ -379,4 +381,30 @@ body{
     position: relative;
     outline: 2px solid black;
 
+}
+
+/*footer*/
+
+footer{
+    background-color: #1D293F;
+    text-align: center;
+    align-items: center;
+    padding: 30px 0;
+    color: #e5e5f7;
+    display: grid;
+    
+}
+
+.titulo{
+    font-size: 30px;
+    padding-top: 30px;
+
+}
+
+
+
+.footer_copy{
+    padding-top: 47px;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
 }
